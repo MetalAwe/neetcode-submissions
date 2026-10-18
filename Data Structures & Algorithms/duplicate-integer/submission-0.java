@@ -1,0 +1,12 @@
+//import java.util.HashSet;
+
+class Solution {
+    public boolean hasDuplicate(int[] nums) {
+        HashSet<Integer> numbers = new HashSet<Integer>();
+        for (int i = 0; i < nums.length; i++){
+            numbers.add(nums[i]);
+        }
+        if(numbers.size() == nums.length) return false;
+        else return true;
+    }
+}
